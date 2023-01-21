@@ -1,8 +1,87 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="fonts.css" type="text/css"/>
+        <style>
+            body {
+                font-family: 'Lato', sans-serif;
+                font-size: .8em;
+                color: #404040;
+                line-height: 1.5em;
+            }
+            h1 {
+                text-transform: uppercase;
+                background-color: black;
+                color: white;
+                font-size: .8em;
+                padding: 1em;
+                text-align: center;
+                margin-bottom: 2em;
+            }
+            h2 {
+                text-align: center;
+                font-family: 'Lora', serif;
+            }
+            img.avatar {
+                max-width: 100%;
+                border-radius: 50%;
+            }
+            div.separator {
+                display: block;
+                width: 100%;
+                border-top: 1px solid #cccccc;
+                margin: 3em 0;
+            }
+            ul.categories {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            ul.categories li::before {
+                content: "›";
+                display: inline-block;
+                margin-right: .3em;
+            }
+            ul.categories li a {
+                display: inline-block;
+            }
+            ul.images {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                grid-gap: .5em;
+            }
+            ul.images img {
+                max-width: 100%;
+            }
+        </style>
+    </head>
     <body>
         <h1>Who is she?</h1>
+        <img class="avatar" src="miss_tincu.png">
         <h2>Miss Tincu</h2>
         <p>Hi everyone! I'm Miss Tincu. I'm very passionate about Mental Health, Work Culture & Work Ethics, Creative Struggles, Womanhood and more. My hobbies include: eating, crying, working on my pin-up aesthetic and making funny Youtube videos. Welcome to my blog!</p>
-        <p><a href="">View Full Profile →</a></p>
+        <p><a href="http://gravatar.com/alexandratincu">View Full Profile →</a></p>
+        <div class="separator"></div>
+        <h1>Categories</h1>
+        <ul class="categories">
+            <li><a>Mental Health</a></li>
+            <li><a>Womanhood</a></li>
+            <li><a>Work Culture</a></li>
+        </ul>
+        <div class="separator"></div>
+        <h1>My Pin-up Model Life</h1>
+        <ul class="images">
+            <li><a href="model/model_1.png" target="_parent"><img src="model/model_1.png" /></a></li>
+            <li><a href="model/model_2.webp" target="_parent"><img src="model/model_2.webp" /></a></li>
+            <li><a href="model/model_3.jpg" target="_parent"><img src="model/model_3.jpg" /></a></li>
+            <li><a href="model/model_4.jpg" target="_parent"><img src="model/model_4.jpg" /></a></li>
+            <li><a href="model/model_5.jpg" target="_parent"><img src="model/model_5.jpg" /></a></li>
+            <li><a href="model/model_6.jpg" target="_parent"><img src="model/model_6.jpg" /></a></li>
+            <li><a href="model/model_7.jpg" target="_parent"><img src="model/model_7.jpg" /></a></li>
+            <li><a href="model/model_8.png" target="_parent"><img src="model/model_8.png" /></a></li>
+            <li><a href="model/model_9.jpg" target="_parent"><img src="model/model_9.jpg" /></a></li>
+        </ul>
     </body>
 </html>
