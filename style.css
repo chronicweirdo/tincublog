@@ -4,7 +4,28 @@ body {
     display: grid;
     grid-template-areas:
         'header header'
-        'content aside'
+        'content aside';
+    margin: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        grid-template-areas:
+            'header'
+            'content';
+    }
+    aside {
+        display: none;
+    }
+}
+
+
+iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -33,6 +54,11 @@ aside {
     grid-area: aside;
     max-width: 265px;
     margin-left: 2em;
+    overflow: hidden;
+}
+
+aside h1 {
+    line-height: 1.5em;
 }
 
 #content {

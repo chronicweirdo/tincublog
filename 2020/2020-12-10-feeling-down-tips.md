@@ -1,10 +1,3 @@
----
-layout: post
-title:  "Feeling Down? Here’s 3 Tips to Pick Yourself Up Again"
-date:   2020-12-10 12:00:00 +0200
-categories: ["mental health", "womanhood"]
----
-
 Time flies when you’re too busy being burned out and anxious, am I right? 😂 I’ll just go ahead and call myself out now for not posting anything in here for 5 months. Truth be told, this year has been a big blur for me because I’ve spent most of it in survival mode.
 
 <figure>
