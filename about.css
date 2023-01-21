@@ -84,8 +84,16 @@ header {
     font-family: 'Lora', serif;
     font-style: italic;
 }
-#content ul {
-    padding-left: 1em;
-    font-size: 1.25em;
-    line-height: 1.8em;
+
+ul.links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul.links li {
+    display: inline-block;
+    margin-right: 1em;
+}
+ul.links a:hover path {
+    fill: #b49543;
 }
