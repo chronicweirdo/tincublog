@@ -1,7 +1,18 @@
+body {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'content aside'
+}
+
 header {
     max-width: 675px;
     margin: auto;
     text-align: center;
+    grid-area: header;
+    justify-self: auto;
 }
 
 #tagline {
@@ -18,7 +29,14 @@ nav a {
     margin: 1em;
 }
 
+aside {
+    grid-area: aside;
+    max-width: 265px;
+    margin-left: 2em;
+}
+
 #content {
+    grid-area: content;
     max-width: 675px;
     font-family: "Lato", sans-serif;
     margin: auto;
