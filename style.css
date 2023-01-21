@@ -1,3 +1,23 @@
+header {
+    max-width: 675px;
+    margin: auto;
+    text-align: center;
+}
+
+#tagline {
+    text-transform: uppercase;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    cursor: pointer;
+    margin: 1em;
+}
+
 #content {
     max-width: 675px;
     font-family: "Lato", sans-serif;
