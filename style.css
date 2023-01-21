@@ -34,48 +34,7 @@ header {
     text-align: center;
     grid-area: header;
     justify-self: auto;
-}
-
-header ul.links {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-header ul.links li {
-    display: inline-block;
-    margin: .5em;
-}
-header ul.links a:hover path {
-    fill: #b49543;
-}
-
-#tagline {
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-    color: #404040;
-    font-size: .65em;
-    letter-spacing: .2em;
-    margin-bottom: 5em;
-}
-
-nav {
-    width: 100%;
-    text-transform: uppercase;
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    font-family: 'Lato', sans-serif;
-}
-
-nav a {
-    text-decoration: none;
-    cursor: pointer;
-    margin: 1em;
-    color: black;
-}
-nav a:hover {
-    color: #b49543;
+    height: 420px;
 }
 
 aside {
