@@ -1,4 +1,7 @@
 {
     "image": "python",
-    "workspaceFolder": "/workspace"
+    "workspaceFolder": "/workspace",
+    "extensions": [
+        "yzane.markdown-pdf"
+    ]
 }
