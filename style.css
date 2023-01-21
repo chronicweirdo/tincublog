@@ -44,9 +44,9 @@ aside {
     overflow: hidden;
 }
 
-aside h1 {
+/*aside h1 {
     line-height: 1.5em;
-}
+}*/
 
 #content {
     grid-area: content;
@@ -54,12 +54,59 @@ aside h1 {
     font-family: "Lato", sans-serif;
     margin: auto;
     color: #404040;
+    -moz-osx-font-smoothing: grayscale;
 }
-#content h1, #content h2 {
+#content ul.categories {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+#content ul.categories li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: .6em;
+}
+#content ul.categories li::after {
+    content: ",";
+    margin-right: .2em;
+}
+#content ul.categories li:last-child::after {
+    content: ""
+}
+#content h1 {
+    font-size: 1.35em;
     line-height: 1.5em;
+    font-family: 'Lora', serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+#content h1::after {
+    content: "";
+    border-bottom: 2px solid black;
+    display: block;
+    padding-top: .5em;
+    width: 1em;
+    margin: auto;
+}
+#content p.date {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .7em;
+}
+#content h2 {
+    font-size: 1.6em;
+    line-height: 1.5em;
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-weight: bold;
 }
 #content p {
-    line-height: 1.5em;
+    font-size: 1.25em;
+    line-height: 1.8em;
+    font-family: 'Lato', sans-serif;
+    color: #404040;
 }
 #content a {
     color: #b49543;
@@ -84,7 +131,6 @@ aside h1 {
 }
 #content blockquote {
     margin: 0;
-    font-size: 1.5em;
     line-height: 1.6em;
     text-align: center;
     padding: 1em 1em;
@@ -92,4 +138,13 @@ aside h1 {
     border-top: 3px solid #ebebeb;
     border-bottom: 3px solid #ebebeb;
     margin-bottom: 1.5em;
+}
+#content blockquote p {
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+#content ul {
+    padding-left: 1em;
+    font-size: 1.25em;
+    line-height: 1.8em;
 }

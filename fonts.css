@@ -7,3 +7,15 @@
     font-family: "Lora";
     src: url("fonts/Lora/static/Lora-Regular.ttf");
 }
+
+@font-face {
+    font-family: "Lora";
+    src: url("fonts/Lora/static/Lora-Italic.ttf");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url("fonts/Lora/static/Lora-Bold.ttf");
+    font-weight: bold;
+}
