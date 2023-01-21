@@ -6,6 +6,28 @@
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
     <link rel="stylesheet" href="fonts.css" type="text/css" />
     <link rel="stylesheet" href="index.css" type="text/css" />
+    <script>
+        function showOnlyCategory(category) {
+            let entries = document.getElementsByClassName("entry");
+            for (let i = 0; i < entries.length; i++) {
+                let entry = entries[i];
+                console.log(entry);
+                if ([...entry.getElementsByClassName("categories")[0].getElementsByTagName("a")].map(e => e.innerHTML).indexOf(category) < 0) {
+                    entry.style.display = "none"
+                }
+            }
+        }
+        window.onload = () => {
+            console.log("loaded");
+            let queryString = window.location.search;
+            let urlParams = new URLSearchParams(queryString);
+            let category = urlParams.get("category");
+            console.log(category);
+            if (category != null) {
+                showOnlyCategory(category);
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -13,13 +35,20 @@
     <aside><iframe src="aside.html"></iframe></aside>
     <div id="content">
         <div class="entry">
-            <ul class="categories"><li><a>mental health</a></li><li><a>womanhood</a></li></ul>
+            <ul class="categories">
+                <li><a href="?category=mental health">mental health</a></li>
+                <li><a href="?category=womanhood">womanhood</a></li>
+            </ul>
             <h1><a>Feeling down? Here's 3 tips to pick yourself up again</a></h1>
             <p>Time flies when you’re too busy being burned out and anxious, am I right? 😂  I’ll just go ahead and call myself out now for not posting anything in here for 5 months. Truth be told, this year has been a big blur for me because I’ve spent most of it in survival mode. When…</p>
             <p class="date">10th Dec 2020</p>
         </div>
         <div class="entry">
-            <ul class="categories"><li><a>mental health</a></li><li><a>womanhood</a></li><li><a>work culture</a></li></ul>
+            <ul class="categories">
+                <li><a href="?category=mental health">mental health</a></li>
+                <li><a href="?category=womanhood">womanhood</a></li>
+                <li><a href="?category=work culture">work culture</a></li>
+            </ul>
             <h1><a>Is resilience overrated?</a></h1>
             <p>Everyone talks about resilience like it’s one of the most glorious abilities you can possess. Is it the end all be all of existence, the answer to all your problems, a skill you can learn, a natural talent you can nurture in time?  Whilst I don’t hold all the answers to these questions, I’m someone…</p>
             <p class="date">12th Jul 2020</p>
