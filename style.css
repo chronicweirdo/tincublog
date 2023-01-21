@@ -1,0 +1,36 @@
+#content {
+    max-width: 675px;
+    font-family: "Lato", sans-serif;
+    margin: auto;
+    color: #404040;
+}
+#content h1, #content h2 {
+    line-height: 1.5em;
+}
+#content p {
+    line-height: 1.5em;
+}
+
+#content figure {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+#content figcaption {
+    color: rgba(0, 0, 0, 0.3);
+}
+#content img {
+    max-width: 100%;
+    margin: auto;
+}
+#content blockquote {
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 1.6em;
+    text-align: center;
+    padding: 1em 1em;
+    overflow-wrap: break-word;
+    border-top: 3px solid #ebebeb;
+    border-bottom: 3px solid #ebebeb;
+    margin-bottom: 1.5em;
+}
