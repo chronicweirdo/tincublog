@@ -1,0 +1,149 @@
+body {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'content aside';
+    padding: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        grid-template-areas:
+            'header'
+            'content';
+    }
+    aside {
+        display: none;
+    }
+}
+
+
+iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    grid-area: header;
+    justify-self: auto;
+    height: 420px;
+}
+
+aside {
+    grid-area: aside;
+    max-width: 265px;
+    margin-left: 2em;
+    overflow: hidden;
+}
+
+#content {
+    grid-area: content;
+    max-width: 675px;
+    font-family: "Lato", sans-serif;
+    margin: auto;
+    color: #404040;
+    -moz-osx-font-smoothing: grayscale;
+}
+#content .entry {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ebebeb;
+}
+#content .entry:last-child {
+    border-bottom: none;
+}
+#content ul.categories {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 0;
+}
+#content ul.categories li {
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: .8em;
+}
+#content ul.categories li::after {
+    content: ",";
+    margin-right: .2em;
+}
+#content ul.categories li:last-child::after {
+    content: ""
+}
+#content h1 {
+    font-size: 1.35em;
+    line-height: 1.5em;
+    font-family: 'Lora', serif;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+#content h1 a {
+    color: black;
+}
+#content p {
+    font-size: 1.25em;
+    line-height: 1.8em;
+    font-family: 'Lato', sans-serif;
+    color: #404040;
+    margin-top: .2em;
+    margin-bottom: .2em;
+}
+#content p.date {
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .7em;
+}
+#content h2 {
+    font-size: 1.6em;
+    line-height: 1.5em;
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#content a {
+    color: #b49543;
+    text-decoration: none;
+    cursor: pointer;
+}
+#content a:hover {
+    color: black;
+}
+
+#content figure {
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+#content figcaption {
+    color: rgba(0, 0, 0, 0.3);
+}
+#content img {
+    max-width: 100%;
+    margin: auto;
+}
+#content blockquote {
+    margin: 0;
+    line-height: 1.6em;
+    text-align: center;
+    padding: 1em 1em;
+    overflow-wrap: break-word;
+    border-top: 3px solid #ebebeb;
+    border-bottom: 3px solid #ebebeb;
+    margin-bottom: 1.5em;
+}
+#content blockquote p {
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
