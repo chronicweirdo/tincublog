@@ -12,23 +12,42 @@
     <link rel="stylesheet" href="fonts.css" type="text/css" />
     <link rel="stylesheet" href="post.css" type="text/css" />
     <script>
+        function getEntryCategories(element) {
+            return [...element.getElementsByClassName("categories")]
+                .flatMap(categoryList => [...categoryList.getElementsByTagName("a")])
+                .map(link => link.innerHTML);
+        }
+        function entryHasCategory(element, category) {
+            let categories = getEntryCategories(element);
+            return categories.indexOf(category) >= 0;
+        }
         function showOnlyCategory(category) {
             let entries = document.getElementsByClassName("entry");
+            let count = 0;
+            let lastVisibleEntry = null;
             for (let i = 0; i < entries.length; i++) {
                 let entry = entries[i];
-                console.log(entry);
-                if ([...entry.getElementsByClassName("categories")[0].getElementsByTagName("a")].map(e => e.innerHTML).indexOf(category) < 0) {
-                    entry.style.display = "none"
+                if (entryHasCategory(entry, category)) {
+                    count = count + 1;
+                    lastVisibleEntry = entry;
+                } else {
+                    entry.style.display = "none";
                 }
+            }
+            if (count == 0) {
+                let noPostsMessage = document.getElementById("noposts")
+                let noPostsParagraph = noPostsMessage.getElementsByTagName("p")[0]
+                noPostsParagraph.innerHTML = "No posts for category " + category + "."
+                noPostsMessage.style.display = "block"
+            } else if (lastVisibleEntry != null) {
+                lastVisibleEntry.style.borderBottom = "0"
             }
         }
         window.onload = () => {
-            console.log("loaded");
             let queryString = window.location.search;
             let urlParams = new URLSearchParams(queryString);
             let category = urlParams.get("category");
-            console.log(category);
-            if (category != null) {
+            if (category != null && category.length > 0) {
                 showOnlyCategory(category);
             }
         }
@@ -39,6 +58,9 @@
     <header><iframe src="header.html"></iframe></header>
     <aside><iframe src="aside.html"></iframe></aside>
     <div id="content">
+        <div id="noposts" style="display: none">
+            <p>No posts for current category.</p>
+        </div>
         <div class="entry">
             <ul class="categories">
                 <li><a href="?category=mental health">mental health</a></li>

@@ -44,6 +44,7 @@ aside {
     max-width: 265px;
     margin-left: 2em;
     height: 1220px;
+    justify-self: right;
 }
 
 #content {
