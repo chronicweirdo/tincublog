@@ -4,7 +4,7 @@ Lately I’ve been dealing with a new stage of my anxiety: anger. I go from 0 to
 
 The latest thing that annoys me is hearing people judging my sense of humour, and trying to guess why I’m funny. “You know you don’t have to smile or be jolly all the time, right? Be the real you.” Or stuff on the lines of “humour is just a coping mechanism for you. Have you ever tried not adding humour to your stories?”. Sure, I can empathise with the logic behind these judgements. I did my fair share of research when it comes to the psychology of using humor as a coping mechanism and I know it’s a real thing.
 
-![](2002-03-11-being-funny-coping-1.webp)
+![](2020-03-11-being-funny-coping-1.webp)
 
 Indeed, I have also used humour as a coping mechanism in the past, particularly when I was growing up. The thing is I always loved grammar, words, languages and laughter. So I thought, why not combine all the above? This love has evolved into a passion for writing. I knew I was creative, smart with words and I also loved comedy and jokes a lot. Whilst I fell into the thrill making others laugh, and using humour as a coping mechanism, this transcended into a real passion for comedy.
 
