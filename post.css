@@ -53,6 +53,13 @@ aside {
     color: #404040;
     -moz-osx-font-smoothing: grayscale;
 }
+#content .entry {
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ebebeb;
+}
+#content .entry:last-child {
+    border-bottom: none;
+}
 #content ul.categories {
     list-style: none;
     padding: 0;
