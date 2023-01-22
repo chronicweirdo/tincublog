@@ -2,10 +2,12 @@ body {
     max-width: 1000px;
     margin: auto;
     display: grid;
+    grid-template-columns: auto auto;
     grid-template-areas:
         'header header'
         'content aside';
     padding: 1em;
+    align-items: start;
 }
 
 @media screen and (max-width: 600px) {
@@ -41,18 +43,13 @@ aside {
     grid-area: aside;
     max-width: 265px;
     margin-left: 2em;
-    overflow: hidden;
+    height: 1220px;
 }
-
-/*aside h1 {
-    line-height: 1.5em;
-}*/
 
 #content {
     grid-area: content;
     max-width: 675px;
     font-family: "Lato", sans-serif;
-    margin: auto;
     color: #404040;
     -moz-osx-font-smoothing: grayscale;
 }
