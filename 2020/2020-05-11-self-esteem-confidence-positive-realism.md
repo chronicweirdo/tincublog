@@ -1,0 +1,46 @@
+# What I learned about self-esteem, confidence & positive realism
+
+The idea for this article came from a response I received to a poll from Instagram where I was asking you what you want to read about next on my blog. One of the answers was “self-esteem, confidence, positive mindset”. Now, I’m no stranger to these concepts - for many years, these were recurring themes on my path to discover who I am.
+
+In movies, magazines and around me I saw confident women who knew their worth and demanded to receive what they deserve. And I wanted that for myself so badly! But the truth is I had no clue how to achieve such goals. I did the only thing I knew how to do best: threw myself into this quest with everything that I had. Looking back, I know I did my best given the survival mode I’ve been in for most of my life. Some of my “master plans”  were extremely silly and naive, but I guess we all have to start from somewhere. 🤦🏻‍♀️
+
+Here’s what I’ve learnt so far:
+
+<figure>
+    <img src="2020-05-11-self-esteem-confidence-positive-realism-1.webp" alt="missing">
+    <figcaption><strong>Gene Tierney</strong> in a 1940 portrait by Horst P. Horst</figcaption>
+</figure>
+
+## Your parent’s opinions & your academic success don’t define you
+
+When I was growing-up in Romania, academic success was thought of very highly, and grades were considered to reflect the level of your intelligence. Most people here automatically respected and praised those who attended higher education, on the assumption that those people are by definition “better” than anyone else. 
+
+For the first 5 years of my life when my mother was still alive, I was spoiled, showered with affection and treated like a princess. I felt like I was the center of the universe, and naturally expected  to be treated as such. After she died, I still had all the self-esteem and confidence she nurtured in me. Then my step mother came along and after she gained my trust, it wasn’t hard for me to accept her and let myself, my fate, my self-esteem and confidence in her hands. Yes, she did love me, kept me alive & fed, provided me with the things I needed to the best of her abilities. But over a period of 10 years, her frustrations, alcoholism, violent outbursts and psychological abuse slowly but firmly shattered all my self-esteem and confidence. Despite the odds, I still became top of my class in school under her watch. I was always on top of my homework, and it wasn’t long until I began outsmarting her and my dad - I was a curious, ambitious and creative kid. But I guess she saw in me what she never had the chance to be - and she started to  bully me, curse me, and tell me constantly that I’m stupid and I have no talent (I was in art school) - and I believed her with all my heart. 
+
+After escaping her, I spent my last two years of highschool with a newfound freedom that I had no idea how to use. And let me tell you - having no self-esteem and confidence didn’t help either. My only joy were my grades and being the top of my class. Unfortunately due to a severe depression in my last year of highschool, that all went to shit too. And then, I was left with nothing. I was nothing.
+
+I know by now that grades don’t define you nor do they necessarily reflect your level of intelligence, and that unfortunately there are many people with shitloads of higher education degrees who are actually not that bright or who are complete blunt assholes (although education is also supposed to refine your behaviour). Don’t measure your worth by academic success because it’s something that can go away really easily.
+
+## It’s not magic 🔮 (Sorry!)
+
+So of course that after believing that I am worthless, stupid and talentless for many years, the next logical step was to ask supernatural forces or a God to make this happen for me. I mean if it works in movies, it works in real life am I right? 😂 The concept was simple: if you wish really hard for something, it will come true. Whether I was praying to God, blowing birthday cake candles or holding on to a piece of paper with my NYE resolutions when we crossed into a new year - to have self-esteem and confidence were always my no.1 wish. Of course nothing happened, and I was still the same no matter how many times I launched these requests into the Universe. But I kept waiting for a miracle for a few more years, just in case. Then, I got my next brilliant idea: the answer is not prayers or wishes, it must be a conscious decision to have self esteem and confidence and after that boom! You’re now 100% that bitch! P.S It doesn’t work.
+
+## Being confident is not a decision
+
+After accepting that magic doesn’t work, I started to accept the idea that it must be something I need to do. Stick positive affirmations all over my room, say empowering things to myself and hoping it sticks.  So I kept waking up in the morning and saying to myself “That’s it! From now on, you are confident!”. Of course, that new found confidence never lasted more than 2 hours or until someone said something hurtful. Whilst I don’t think you can suddenly have more self-esteem and confidence through a conscious decision that you communicate to yourself each morning in the mirror, I think you can make small changes in the way you talk and present yourself. You can start by not calling yourself “stupid” or an “idiot” in front of others. We all make mistakes, and take stupid decisions or act like idiots - but it’s enough for you to acknowledge that to yourself only. Take it easy with the calling yourself names and self-deprecating humor because people who don’t like you or don’t know you might use what you say against you. Or they might see an opportunity to take advantage of you because they can see your insecurities in what you say.
+
+It will take a long time until your confidence will show in real life, but in the meantime you can practice being confident in writing - start with an sms, an email, a DM, a Facebook message, a comment. And you’ll see how little by little, the seeds of your confidence will start to grow.
+
+## [Nature, nurture](https://www.verywellmind.com/what-is-nature-versus-nurture-2795392) & all that jazz
+
+As a young adult I believed that lack of nurture from my formative years was the sole reason why I had little self-esteem and confidence. But as years went by, I learned there’s more to this than genes, hereditary factors, your childhood, culture and experiences. There are many more factors that influence your identity and opinion of yourself. I have friends who come from a loving, nurturing family, had a great education, haven’t experienced major traumas - and still have little self-confidence. I also met people who came off super confident but it was just a facade to hide their insecurities, frustrations and low self-esteem. Most people that I’ve seen comfortable in their own skin, confident and aware of their value became this way because of what they did after becoming an adult - their experiences, failures, the luck and success they experienced.
+
+## Be positive, but realistic
+
+I’ve had my fair share of disappointment and lack of truth in my life. That’s why reality and truth are so important to me as an adult. 
+
+Out of all the lessons I’ve learnt on this journey to become a badass, confident woman who knows her worth (I’m not there yet don’t worry 😂), this one is the most important and valuable for me. Why? Because sooner or later, you discover there aren’t that many things to be optimistic about. At least, not all the time. And even if you choose to see the world through rose colored glasses, the moment you’ll take those off you’ll unleash a lot of sadness and disappointment on yourself. Life is hard, unfair, and cruel sometimes - but it’s also beautiful, fun and rewarding. To me, the concept of positive realism means to see the good and the beauty in people and experiences (until proven otherwise), and always take into account all the things that can go wrong - and trust me, they will. No matter who you want to become, what you want to improve about yourself or your life - let your imagination go wild. Then, search for practical ideas on how to get where you want and break that process down into manageable pieces. 
+
+There is no recipe for becoming the most confident version of yourself. Other people’s opinion of you, your grades, the praises you receive for your work, your experiences, mental health issues, your upbringing, tendencies, culture, the peer pressure and society standards - all of these will contribute to shaping your identity, self-worth and confidence. 
+
+It’s up to you and only you to add the final touches to this mold - strip away what others wanted you to be and leave only what is truly representative of yourself, change or improve what’s not working well, add more to what you want to expand, refine the sharp edges if needed.
