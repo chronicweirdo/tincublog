@@ -1,13 +1,15 @@
+# Feeling Down? Here's 3 Tips to Pick Yourself Up Again
+
 Time flies when you’re too busy being burned out and anxious, am I right? 😂 I’ll just go ahead and call myself out now for not posting anything in here for 5 months. Truth be told, this year has been a big blur for me because I’ve spent most of it in survival mode.
 
 <figure>
-    <img src="2020-12-10-feeling-down-tips-photo-1.webp" alt="missing">
+    <img src="2020-12-10-feeling-down-tips-1.webp" alt="missing">
     <figcaption>Photo by Erwin Blumenfeld</figcaption>
 </figure>
 
-When I’m in survival mode, I don’t function as usual. I don’t eat regularly, rest, and take care of my mind enough. I don’t exercise much or do things that bring me joy. Instead of letting my creativity out, which is important for my mental health and wellbeing, I just keep piling ideas in my head until it looks like a browser with 100 tabs open at once and do nothing to bring those concepts to life. My hobbies, creative projects, and interests are left hanging and become haunting concepts that keep nagging me in the back of my mind.
+When I’m in survival mode, I don’t function as usual. I don’t eat regularly, rest, and [take care of my mind](2020-04-24-kinder-to-yourself-social-distancing.html) enough. I don’t exercise much or do things that bring me joy. Instead of letting my creativity out, which is important for my mental health and wellbeing, I just keep piling ideas in my head until it looks like a browser with 100 tabs open at once and do nothing to bring those concepts to life. My hobbies, creative projects, and interests are left hanging and become haunting concepts that keep nagging me in the back of my mind.
 
-Naturally, I haven’t paid much attention to my anxiety levels either and things spiraled out of control. Therapy gave me the tools I needed to keep it in check, but I didn’t use much of those tools in months so here we are.
+Naturally, I haven’t paid much attention to my anxiety levels either and things spiraled out of control. [Therapy gave me the tools](2020-04-18-started-therapy.html) I needed to keep it in check, but I didn’t use much of those tools in months so here we are.
 
 Back in February my dad almost died of a transient ischemic attack (stroke), then the COVID-19 pandemic started, then another loved one almost died (not covid related). On top of these things I haven’t been doing well myself both mentally and physically – I feel like I’ve spent more time in burnout and dealing with crippling anxiety than I spent out of it.
 
@@ -22,7 +24,7 @@ So we’ve already established that I haven’t done myself any favors by stayin
 The premise of this article was to write a “pick me up” piece whilst I’m still down in the trenches, which is hilarious to me. And who knows, maybe reading something like this might be soothing or helpful for someone else.
 
 <figure>
-    <img src="2020-12-10-feeling-down-tips-photo-2.webp" alt="missing">
+    <img src="2020-12-10-feeling-down-tips-2.webp" alt="missing">
     <figcaption>Photo by Erwin Blumenfeld</figcaption>
 </figure>
 
@@ -39,7 +41,7 @@ Planning and writing things down will help you declutter your mind. Doing things
 Last but not least, let’s not forget the “do it well” part of this advice. This list will help you gain some mental space and probably spare some precious energy (you know, the one you would consume feeling like shit because you’re behind with everything). Considering you are doing less, try to give each item from the list your best and “be present” mentally when performing those actionable steps. Otherwise, it can all backfire and bite you in the ass – and that’s the last thing you need when you’re already down – more crap to deal with.   
 
 <figure>
-    <img src="2020-12-10-feeling-down-tips-photo-3.webp" alt="missing">
+    <img src="2020-12-10-feeling-down-tips-3.webp" alt="missing">
     <figcaption>Photo by Erwin Blumenfeld</figcaption>
 </figure>
 
@@ -64,10 +66,10 @@ Here are a few go-to places online, that help me get in a better mood:
 - Watch List: [My Next Guest Needs no Introduction with David Letterman](https://youtu.be/m_HeEjm-3CQ), [Trixie Mattel](https://www.youtube.com/channel/UC0biFgrMdkv1hFAFLVePODQ), [UNHhhh with Trixie and Katya](https://www.youtube.com/watch?v=eZ374Itvg5c&list=PLhgFEi9aNUb2BNrIEecCGXApgeX7Yjwz8&index=1), [The Bliss Bean](https://www.youtube.com/channel/UCnlA6utKwEkshWt_fJavl8Q), [The CottageFairy](https://www.youtube.com/channel/UCKx5lHJ6Fr5mbT4TYVLh6ng);
 - Podcasts: [In Bed with Nick and Megan](https://podcasts.apple.com/us/podcast/in-bed-with-nick-and-megan/id1487579237), [The Michelle Obama Podcast](https://podcasts.apple.com/us/podcast/the-michelle-obama-podcast/id1532956108), [Table Manners](https://podcasts.apple.com/us/podcast/table-manners-with-jessie-ware/id1305228910), [Simplypodlogical](https://www.youtube.com/watch?v=DTfJNStQtus);
 - Illustrations: [VeryRealFantasy](https://www.instagram.com/veryrealfantasy/), [Ketnipz](https://www.instagram.com/Ketnipz/), [Gemma Corell](https://www.instagram.com/gemmacorrell/);
-- Reddit: [DiWHY](https://www.reddit.com/r/DiWHY), [WhatsWrongWithYourDog](https://www.facebook.com/PsychComedy), [You had one job!](https://www.reddit.com/r/onejob/), [Expectation Vs. Reality](https://www.reddit.com/r/ExpectationVsReality).
+- Reddit: [DiWHY](https://www.reddit.com/r/DiWHY), [WhatsWrongWithYourDog](https://www.reddit.com/r/WhatsWrongWithYourDog/), [You had one job!](https://www.reddit.com/r/onejob/), [Expectation Vs. Reality](https://www.reddit.com/r/ExpectationVsReality).
 
 <figure>
-    <img src="2020-12-10-feeling-down-tips-photo-4.jpg" alt="missing">
+    <img src="2020-12-10-feeling-down-tips-4.jpg" alt="missing">
     <figcaption>Photo by Erwin Blumenfeld</figcaption>
 </figure>
 
