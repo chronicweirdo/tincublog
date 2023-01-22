@@ -4,7 +4,7 @@ It took me many years to acknowledge the fact that I have major anxiety issues. 
 
 <figure>
     <img src="2020-03-11-embracing-anxiety-1.jpg" alt="missing">
-    <figcaption>Artwork by Eugenia Loli</figcaption>
+    <figcaption><a href="https://cargocollective.com/eugenialoli">Artwork by Eugenia Loli</a></figcaption>
 </figure>
 
 Everybody experiences stress. It is a normal part of life and the way your body communicates to you that you need to react quickly and effectively to a high-pressure situation. You can feel stress when you worry about your future, your job, finances, relationships, the illness or wellbeing of a loved one. It is also triggered by having too many things to do or you when you just haven’t slept well.
