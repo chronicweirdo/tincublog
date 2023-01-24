@@ -1,6 +1,6 @@
 {
     "image": "python",
-    "workspaceFolder": "/workspace",
+    "workspaceFolder": "/workspaces/tincublog",
     "extensions": [
         "yzane.markdown-pdf"
     ]
