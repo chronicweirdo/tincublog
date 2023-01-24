@@ -2,5 +2,6 @@
     "markdown-pdf.styles": [
         "style.css"
     ],
-    "markdown-pdf.includeDefaultStyles": false
+    "markdown-pdf.includeDefaultStyles": false,
+    "editor.wordWrap": "on"
 }
