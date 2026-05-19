@@ -3,6 +3,7 @@
     <head>
         <base target="_parent" href="./">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="fonts.css" type="text/css"/>
         <style>
             body {
@@ -42,6 +43,45 @@
             nav a:hover {
                 color: #b49543;
             }
+            #logo-line {
+                text-align: center;
+            }
+            #logo {
+                max-width: 100%;
+            }
+
+            #menu-button {
+                display: none;
+            }
+
+            @media (max-width: 1050px) {
+                #logo-line {
+                    display: flex;
+                    background-color: pink;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                }
+                nav {
+                    display: none;
+                    position: absolute;
+                    top: 200px;
+                }
+                #menu-button {
+                    display: inline flex;
+                    font-size: 5em;
+                    margin-left: auto;
+                    background-color: lightblue;
+                }
+                nav li {
+                    display: block;
+                }
+                nav ul.submenu {
+                    display: block;
+                    padding: 0 0 0 2em;
+                    background-color: transparent;
+                }
+            }
         </style>
         <script>
             function showSubmenu(link, submenu) {
@@ -64,14 +104,55 @@
                     submenuLink.addEventListener("mouseout", (ev) => hideSubmenu(submenuLink, submenu))
                 }
             }
+            function resetSubmenus() {
+                let submenus = document.getElementsByClassName("submenu")
+                for (let submenu of submenus) {
+                    let submenuLink = submenu.parentElement.getElementsByTagName("a")[0]
+                    submenu.replaceWith(submenu.cloneNode(true))
+                    submenuLink.replaceWith(submenuLink.cloneNode(true))
+                }
+            }
+            function getNav() {
+                return document.getElementsByTagName("nav")[0]
+            }
+            function toggleFullMenu(button) {
+                let buttonPos = button.getBoundingClientRect()
+                let nav = getNav()
+                console.log("toggle menu: " + nav.style.display)
+                if (nav.style.display == "block") {
+                    nav.style.display = "none"
+                } else {
+                    nav.style.display = "block"
+                    nav.style.top = (buttonPos.top + buttonPos.height) + "px"
+                }
+            }
+            function applyMenuButton() {
+                let menuButton = document.getElementById("menu-button")
+                menuButton.addEventListener("click", (ev) => toggleFullMenu(menuButton))
+            }
+            function setupActions() {
+                if (window.innerWidth > 1050) {
+                    //getNav().style.display = "block"
+                    applySubmenus()
+                } else {
+                    //getNav().style.display = "none"
+                    resetSubmenus()
+                }
+            }
             window.onload = function() {
                 console.log("applying functions")
-                applySubmenus()
+                //applySubmenus()
+                applyMenuButton()
+                setupActions()
+            }
+            window.onresize = function() {
+                setupActions()
             }
         </script>
     </head>
     <body>
-        <img id="logo" src="misstincu_logo_site_220x400.webp" />
+        <header>
+        <p id="logo-line"><img id="logo" src="misstincu_logo_site_220x400.webp" /><span id="menu-button">☰</span></p>
         <nav>
             <ul>
                 <li>
@@ -103,5 +184,6 @@
                 <li><a href="https://www.linkedin.com/in/alexandra-tincu-4122638a/"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M19,3H5C3.895,3,3,3.895,3,5v14c0,1.105,0.895,2,2,2h14c1.105,0,2-0.895,2-2V5C21,3.895,20.105,3,19,3z M9,17H6.477v-7H9 V17z M7.694,8.717c-0.771,0-1.286-0.514-1.286-1.2s0.514-1.2,1.371-1.2c0.771,0,1.286,0.514,1.286,1.2S8.551,8.717,7.694,8.717z M18,17h-2.442v-3.826c0-1.058-0.651-1.302-0.895-1.302s-1.058,0.163-1.058,1.302c0,0.163,0,3.826,0,3.826h-2.523v-7h2.523v0.977 C13.93,10.407,14.581,10,15.802,10C17.023,10,18,10.977,18,13.174V17z"/></svg></a></li>
             </ul>
         </nav>
+        </header>
     </body>
 </html>
