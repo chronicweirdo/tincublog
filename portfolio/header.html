@@ -12,6 +12,7 @@
             }
 
             nav {
+                display: block;
                 width: 100%;
                 text-transform: uppercase;
                 border-top: 1px solid #ebebeb;
@@ -105,6 +106,9 @@
                 }
             }
             function resetSubmenus() {
+                let nav = getNav()
+                nav.style.display = null
+                
                 let submenus = document.getElementsByClassName("submenu")
                 for (let submenu of submenus) {
                     let submenuLink = submenu.parentElement.getElementsByTagName("a")[0]
