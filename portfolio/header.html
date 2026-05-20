@@ -79,6 +79,7 @@
                 }
                 nav ul.submenu {
                     display: block;
+                    position: relative;
                     padding: 0 0 0 2em;
                     background-color: transparent;
                 }
@@ -105,15 +106,15 @@
                     submenuLink.addEventListener("mouseout", (ev) => hideSubmenu(submenuLink, submenu))
                 }
             }
-            function resetSubmenus() {
+            function resetNav() {
                 let nav = getNav()
                 nav.style.display = null
-                
-                let submenus = document.getElementsByClassName("submenu")
-                for (let submenu of submenus) {
-                    let submenuLink = submenu.parentElement.getElementsByTagName("a")[0]
-                    submenu.replaceWith(submenu.cloneNode(true))
-                    submenuLink.replaceWith(submenuLink.cloneNode(true))
+
+                let lists = nav.getElementsByTagName("ul")
+                for (let list of lists) {
+                    list.style.display = null
+                    list.style.position = null
+                    list.replaceWith(list.cloneNode(true))
                 }
             }
             function getNav() {
@@ -140,7 +141,8 @@
                     applySubmenus()
                 } else {
                     //getNav().style.display = "none"
-                    resetSubmenus()
+                    //resetSubmenus()
+                    resetNav()
                 }
             }
             window.onload = function() {
