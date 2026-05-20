@@ -56,6 +56,17 @@
             }
 
             @media (max-width: 1050px) {
+                header {
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                }
+                header p {
+                    margin: 0;
+                }
+                #logo {
+                    height: 80px;
+                }
                 #logo-line {
                     display: flex;
                     background-color: pink;
@@ -67,6 +78,9 @@
                     display: none;
                     position: absolute;
                     top: 200px;
+                    border: 0;
+                    background-color:#b49543;
+                    overflow: scroll;
                 }
                 #menu-button {
                     display: inline flex;
@@ -117,6 +131,17 @@
                     list.replaceWith(list.cloneNode(true))
                 }
             }
+            function resetBody() {
+                window.document.body.style.paddingTop = null
+                getNav().style.height = null
+            }
+            function setupMobilePage() {
+                let pos = document.getElementById("logo-line").getBoundingClientRect()
+                window.document.body.style.paddingTop = (pos.top + pos.height) + "px"
+
+                let nav = getNav()
+                nav.style.height = (window.innerHeight - (pos.top + pos.height)) + "px"
+            }
             function getNav() {
                 return document.getElementsByTagName("nav")[0]
             }
@@ -138,11 +163,13 @@
             function setupActions() {
                 if (window.innerWidth > 1050) {
                     //getNav().style.display = "block"
+                    resetBody()
                     applySubmenus()
                 } else {
                     //getNav().style.display = "none"
                     //resetSubmenus()
                     resetNav()
+                    setupMobilePage()
                 }
             }
             window.onload = function() {
@@ -191,5 +218,13 @@
             </ul>
         </nav>
         </header>
+        <p>This one is the first paragraph!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+
+</p>
     </body>
 </html>
