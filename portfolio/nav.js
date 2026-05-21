@@ -30,6 +30,11 @@ function setupMobile() {
         list.style.position = null
         list.replaceWith(list.cloneNode(true))
     }
+    // reset nav links
+    let links = nav.getElementsByTagName("a")
+    for (let link of links) {
+        link.classList.remove('open')
+    }
     // setup top padding
     let pos = document.getElementById("logo-line").getBoundingClientRect()
     window.document.body.style.paddingTop = (pos.top + pos.height) + "px"
