@@ -14,6 +14,10 @@ nav svg {
     display: inline;
     vertical-align: -0.4em;
 }
+nav svg.svg-icon {
+    display: inline;
+    vertical-align: -0.125em;
+}
 
 nav li {
     display: inline-block;
