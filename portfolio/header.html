@@ -6,6 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="fonts.css" type="text/css"/>
         <style>
+             :root {
+                --foreground-color: #000000;
+                --background-color: #ffffff;
+            }
+            @media (prefers-color-scheme: light) {
+                :root {
+                    --foreground-color: #000000;
+                    --background-color: #ffffff;
+                }
+            }
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --foreground-color: #ffffff;
+                    --background-color: #000000;
+                }
+            }
             body {
                 width: 100%;
                 margin: auto;
@@ -20,26 +36,35 @@
                 padding-top: 1em;
                 padding-bottom: 1em;
                 font-family: 'Lato', sans-serif;
+                color: var(--foreground-color, #000000)
             }
             nav li {
                 display: inline-block;
                 list-style: none;
             }
-            nav ul.submenu {
+            nav li ul {
                 display: none;
-                padding: 1em;
+                padding: 0 1em 1em 1em;
                 margin: 0;
-                background-color: red;
+                color: var(--background-color, #ffffff);
+                background-color: var(--foreground-color, #000000);
             }
-            nav ul.submenu li {
+            nav li ul li {
                 display: block;
+                padding: 0;
+                margin-top: 1em;
             }
 
             nav a {
                 text-decoration: none;
                 cursor: pointer;
                 margin: 1em;
-                color: black;
+                color: var(--foreground-color, #000000)
+            }
+            nav li ul li a {
+                padding: 0;
+                margin: 0;
+                color: var(--background-color, #ffffff);
             }
             nav a:hover {
                 color: #b49543;
@@ -91,7 +116,7 @@
                 nav li {
                     display: block;
                 }
-                nav ul.submenu {
+                nav li ul {
                     display: block;
                     position: relative;
                     padding: 0 0 0 2em;
@@ -151,18 +176,24 @@
                     submenu.style.position = "absolute"
                     submenu.style.top = pos.top + pos.height
                     submenu.style.left = pos.left
+                    submenu.style.width = pos.width + "px"
                 }
                 let hideSubmenu = (link, submenu) => {
                     submenu.style.display = "none"
+                    //link.classList.remove('open')
                 }
                 // hide submenus and apply actions
-                let submenus = nav.getElementsByClassName("submenu")
+                //let submenus = nav.getElementsByClassName("submenu")
+                let submenus = nav.getElementsByTagName("ul")
                 for (let submenu of submenus) {
-                    let submenuLink = submenu.parentElement.getElementsByTagName("a")[0]
-                    submenu.addEventListener("mouseover", (ev) => showSubmenu(submenuLink, submenu))
-                    submenuLink.addEventListener("mouseover", (ev) => showSubmenu(submenuLink, submenu))
-                    submenu.addEventListener("mouseout", (ev) => hideSubmenu(submenuLink, submenu))
-                    submenuLink.addEventListener("mouseout", (ev) => hideSubmenu(submenuLink, submenu))
+                    let parent = submenu.parentElement
+                    if (parent.tagName == "LI") {
+                        let submenuLink = submenu.parentElement.getElementsByTagName("a")[0]
+                        submenu.addEventListener("mouseover", (ev) => showSubmenu(submenuLink, submenu))
+                        submenuLink.addEventListener("mouseover", (ev) => showSubmenu(submenuLink, submenu))
+                        submenu.addEventListener("mouseout", (ev) => hideSubmenu(submenuLink, submenu))
+                        submenuLink.addEventListener("mouseout", (ev) => hideSubmenu(submenuLink, submenu))
+                    }
                 }
             }
             window.onload = function() {
