@@ -105,12 +105,14 @@ nav a:hover {
         position: absolute;
         top: 200px;
         border: 0;
-        background-color: #b49543;
+        background-color: #c7b78d;
         overflow: scroll;
     }
 
     nav a, nav li ul li a {
-        color: var(--foreground-color, #000000)
+        color: var(--foreground-color, #000000);
+        padding: 0 0 .5em 0;
+        display: inline-block;
     }
 
 
@@ -130,7 +132,12 @@ nav a:hover {
     nav li ul {
         display: block;
         position: relative;
-        padding: 0 0 0 2em;
+        padding: 0 0 0 1em;
         background-color: transparent;
+        border: 0;
+    }
+
+    nav svg.svg-icon {
+        display: none;
     }
 }
