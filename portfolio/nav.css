@@ -12,6 +12,7 @@ nav {
 
 nav svg {
     display: inline;
+    vertical-align: -0.4em;
 }
 
 nav li {
