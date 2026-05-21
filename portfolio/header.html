@@ -100,18 +100,63 @@
             }
         </style>
         <script>
-            function showSubmenu(link, submenu) {
-                let pos = link.getBoundingClientRect()
-                submenu.style.display = "block"
-                submenu.style.position = "absolute"
-                submenu.style.top = pos.top + pos.height
-                submenu.style.left = pos.left
+            function applyMenuButton() {
+                let toggleFullMenu = (button) => {
+                    let buttonPos = button.getBoundingClientRect()
+                    let nav = document.getElementsByTagName("nav")[0]
+                    if (nav.style.display == "block") {
+                        nav.style.display = "none"
+                    } else {
+                        nav.style.display = "block"
+                        nav.style.top = (buttonPos.top + buttonPos.height) + "px"
+                    }
+                }
+                let menuButton = document.getElementById("menu-button")
+                menuButton.addEventListener("click", (ev) => toggleFullMenu(menuButton))
             }
-            function hideSubmenu(link, submenu) {
-                submenu.style.display = "none"
+            function setupActions() {
+                if (window.innerWidth > 1050) {
+                    setupDesktop()
+                } else {
+                    setupMobile()
+                }
             }
-            function applySubmenus() {
-                let submenus = document.getElementsByClassName("submenu")
+            function setupMobile() {
+                // reset nav display
+                let nav = document.getElementsByTagName("nav")[0]
+                nav.style.display = null
+                // reset nav lists
+                let lists = nav.getElementsByTagName("ul")
+                for (let list of lists) {
+                    list.style.display = null
+                    list.style.position = null
+                    list.replaceWith(list.cloneNode(true))
+                }
+                // setup top padding
+                let pos = document.getElementById("logo-line").getBoundingClientRect()
+                window.document.body.style.paddingTop = (pos.top + pos.height) + "px"
+                // setup nav height
+                nav.style.height = (window.innerHeight - (pos.top + pos.height)) + "px"
+            }
+            function setupDesktop() {
+                // reset the top body padding
+                window.document.body.style.paddingTop = null
+                // reset nav height
+                let nav = document.getElementsByTagName("nav")[0]
+                nav.style.height = null
+                // prepare submenu actions
+                let showSubmenu = (link, submenu) => {
+                    let pos = link.getBoundingClientRect()
+                    submenu.style.display = "block"
+                    submenu.style.position = "absolute"
+                    submenu.style.top = pos.top + pos.height
+                    submenu.style.left = pos.left
+                }
+                let hideSubmenu = (link, submenu) => {
+                    submenu.style.display = "none"
+                }
+                // hide submenus and apply actions
+                let submenus = nav.getElementsByClassName("submenu")
                 for (let submenu of submenus) {
                     let submenuLink = submenu.parentElement.getElementsByTagName("a")[0]
                     submenu.addEventListener("mouseover", (ev) => showSubmenu(submenuLink, submenu))
@@ -120,60 +165,7 @@
                     submenuLink.addEventListener("mouseout", (ev) => hideSubmenu(submenuLink, submenu))
                 }
             }
-            function resetNav() {
-                let nav = getNav()
-                nav.style.display = null
-
-                let lists = nav.getElementsByTagName("ul")
-                for (let list of lists) {
-                    list.style.display = null
-                    list.style.position = null
-                    list.replaceWith(list.cloneNode(true))
-                }
-            }
-            function resetBody() {
-                window.document.body.style.paddingTop = null
-                getNav().style.height = null
-            }
-            function setupMobilePage() {
-                let pos = document.getElementById("logo-line").getBoundingClientRect()
-                window.document.body.style.paddingTop = (pos.top + pos.height) + "px"
-
-                let nav = getNav()
-                nav.style.height = (window.innerHeight - (pos.top + pos.height)) + "px"
-            }
-            function getNav() {
-                return document.getElementsByTagName("nav")[0]
-            }
-            function toggleFullMenu(button) {
-                let buttonPos = button.getBoundingClientRect()
-                let nav = getNav()
-                console.log("toggle menu: " + nav.style.display)
-                if (nav.style.display == "block") {
-                    nav.style.display = "none"
-                } else {
-                    nav.style.display = "block"
-                    nav.style.top = (buttonPos.top + buttonPos.height) + "px"
-                }
-            }
-            function applyMenuButton() {
-                let menuButton = document.getElementById("menu-button")
-                menuButton.addEventListener("click", (ev) => toggleFullMenu(menuButton))
-            }
-            function setupActions() {
-                if (window.innerWidth > 1050) {
-                    //getNav().style.display = "block"
-                    resetBody()
-                    applySubmenus()
-                } else {
-                    //getNav().style.display = "none"
-                    //resetSubmenus()
-                    resetNav()
-                    setupMobilePage()
-                }
-            }
             window.onload = function() {
-                console.log("applying functions")
                 //applySubmenus()
                 applyMenuButton()
                 setupActions()
