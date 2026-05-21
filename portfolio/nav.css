@@ -10,6 +10,10 @@ nav {
     color: var(--foreground-color, #000000)
 }
 
+nav svg {
+    display: inline;
+}
+
 nav li {
     display: inline-block;
     list-style: none;
@@ -17,29 +21,39 @@ nav li {
 
 nav li ul {
     display: none;
-    padding: 0 1em 1em 1em;
+    padding: 0 0 1em 0;
     margin: 0;
-    color: var(--background-color, #ffffff);
-    background-color: var(--foreground-color, #000000);
+    color: var(--foreground-color, #000000);
+    background-color: var(--background-color, #ffffff);
+    border-left: 1px solid var(--foreground-color, #000000);
+    border-right: 1px solid var(--foreground-color, #000000);
+    border-bottom: 1px solid var(--foreground-color, #000000);
 }
 
 nav li ul li {
     display: block;
     padding: 0;
-    margin-top: 1em;
+    margin: 1em 1em 0 1em;
 }
 
 nav a {
     text-decoration: none;
     cursor: pointer;
-    margin: 1em;
-    color: var(--foreground-color, #000000)
+    padding: 1em 1em 0 1em;
+    color: var(--foreground-color, #000000);
+}
+
+nav a.open {
+    border-left: 1px solid var(--foreground-color, #000000);
+    border-right: 1px solid var(--foreground-color, #000000);
+    border-top: 1px solid var(--foreground-color, #000000);
 }
 
 nav li ul li a {
     padding: 0;
     margin: 0;
-    color: var(--background-color, #ffffff);
+    color: var(--foreground-color, #ffffff);
+    border: 0;
 }
 
 nav a:hover {

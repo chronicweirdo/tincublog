@@ -49,11 +49,12 @@ function setupDesktop() {
         submenu.style.position = "absolute"
         submenu.style.top = pos.top + pos.height
         submenu.style.left = pos.left
-        submenu.style.width = pos.width + "px"
+        submenu.style.width = (pos.width) + "px"
+        link.classList.add('open')
     }
     let hideSubmenu = (link, submenu) => {
         submenu.style.display = "none"
-        //link.classList.remove('open')
+        link.classList.remove('open')
     }
     // hide submenus and apply actions
     //let submenus = nav.getElementsByClassName("submenu")
