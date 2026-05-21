@@ -62,7 +62,8 @@ nav li ul li a {
 }
 
 nav a:hover {
-    color: #b49543;
+    color: var(--highlight-color, #f05843);
+    fill: var(--highlight-color, #f05843);
 }
 
 #logo-line {
@@ -94,7 +95,7 @@ nav a:hover {
 
     #logo-line {
         display: flex;
-        background-color: pink;
+        background-color: var(--background-color, #ffffff);
         position: absolute;
         top: 0;
         width: 100%;
@@ -105,7 +106,7 @@ nav a:hover {
         position: absolute;
         top: 200px;
         border: 0;
-        background-color: #c7b78d;
+        background-color: var(--background-color, #ffffff);
         overflow: scroll;
     }
 
@@ -118,9 +119,9 @@ nav a:hover {
 
     #menu-button {
         display: inline flex;
-        font-size: 5em;
+        font-size: 4em;
         margin-left: auto;
-        background-color: lightblue;
+        background-color: var(--background-color, #ffffff);
     }
 
     nav li, nav li ul li {
