@@ -49,6 +49,10 @@ function setupDesktop() {
     nav.style.display = null
     nav.style.height = null
     // prepare submenu actions
+    const disableClick = (event) => {
+        event.preventDefault()
+        return false;
+    }
     let showSubmenu = (link, submenu) => {
         let pos = link.getBoundingClientRect()
         submenu.style.display = "block"
@@ -57,11 +61,14 @@ function setupDesktop() {
         submenu.style.left = pos.left
         submenu.style.width = (pos.width-2*parseInt(window.getComputedStyle(link).borderLeftWidth)) + "px"
         link.classList.add('open')
+        setTimeout(() => link.removeEventListener("click", disableClick), 500)
     }
     let hideSubmenu = (link, submenu) => {
         submenu.style.display = "none"
         link.classList.remove('open')
+        link.addEventListener("click", disableClick)
     }
+    
     // hide submenus and apply actions
     //let submenus = nav.getElementsByClassName("submenu")
     let submenus = nav.getElementsByTagName("ul")
@@ -69,6 +76,7 @@ function setupDesktop() {
         let parent = submenu.parentElement
         if (parent.tagName == "LI") {
             let submenuLink = submenu.parentElement.getElementsByTagName("a")[0]
+            submenuLink.addEventListener("click", disableClick)
             submenu.addEventListener("mouseover", (ev) => showSubmenu(submenuLink, submenu))
             submenuLink.addEventListener("mouseover", (ev) => showSubmenu(submenuLink, submenu))
             submenu.addEventListener("mouseout", (ev) => hideSubmenu(submenuLink, submenu))
