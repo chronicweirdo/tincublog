@@ -44,8 +44,9 @@ function setupMobile() {
 function setupDesktop() {
     // reset the top body padding
     window.document.body.style.paddingTop = null
-    // reset nav height
+    // reset nav height and display
     let nav = document.getElementsByTagName("nav")[0]
+    nav.style.display = null
     nav.style.height = null
     // prepare submenu actions
     let showSubmenu = (link, submenu) => {
