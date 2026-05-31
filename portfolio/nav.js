@@ -20,6 +20,7 @@ function setupActions() {
     }
 }
 function setupMobile() {
+    window.onscroll = null
     // reset nav display
     let nav = document.getElementsByTagName("nav")[0]
     nav.style.display = null
@@ -41,11 +42,44 @@ function setupMobile() {
     // setup nav height
     nav.style.height = (window.innerHeight - (pos.top + pos.height)) + "px"
 }
+function setupDesktopNavPositionFunction() {
+    window.onscroll = null
+
+    let logoLine = document.getElementById("logo-line")
+    logoLine.style.marginBottom = null
+    let logoLineMarginBottom = parseInt(window.getComputedStyle(logoLine).marginBottom)
+    let originalNavTop = window.scrollY + logoLine.getBoundingClientRect().top + logoLine.getBoundingClientRect().height
+    //console.log("original nav top: " + originalNavTop)
+    let nav = document.getElementsByTagName("nav")[0]
+    nav.style.position = null
+    nav.style.top = null
+    
+
+    onScrollFunction = (ev) => {
+        //console.log("setting up on scroll")
+        //console.log(window.scrollY)
+        if (window.scrollY > originalNavTop) {
+            nav.style.position = "fixed"
+            nav.style.top = 0
+            logoLine.style.marginBottom = (logoLineMarginBottom + nav.getBoundingClientRect().height) + "px"
+        } else {
+            nav.style.position = null
+            nav.style.top = null
+            logoLine.style.marginBottom = null
+        }
+    }
+    window.onscroll = onScrollFunction
+    onScrollFunction(null)
+}
 function setupDesktop() {
     // reset the top body padding
     window.document.body.style.paddingTop = null
     // reset nav height and display
+    setupDesktopNavPositionFunction()
+    
     let nav = document.getElementsByTagName("nav")[0]
+    //let originalNavTop = nav.getBoundingClientRect().top
+
     nav.style.display = null
     nav.style.height = null
     // prepare submenu actions
