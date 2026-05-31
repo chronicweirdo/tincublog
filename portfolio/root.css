@@ -2,12 +2,14 @@
     --foreground-color: #000000;
     --background-color: #ffffff;
     --highlight-color: #f05843;
+    --light-line: #ebebeb;
 }
 @media (prefers-color-scheme: light) {
     :root {
         --foreground-color: #000000;
         --background-color: #ffffff;
         --highlight-color: #f05843;
+        --light-line: #ebebeb;
     }
 }
 @media (prefers-color-scheme: dark) {
@@ -15,9 +17,12 @@
         --foreground-color: #ffffff;
         --background-color: #000000;
         --highlight-color: #f05843;
+        --light-line: #1a1a1a;
     }
 }
 body {
     width: 100%;
     margin: auto;
+    color: var(--foreground-color, #000000);
+    background-color: var(--background-color, #ffffff);
 }

@@ -2,8 +2,8 @@ nav {
     display: block;
     width: 100%;
     text-transform: uppercase;
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid var(--light-line, #ebebeb);
+    border-bottom: 1px solid var(--light-line, #ebebeb);
     padding-top: 1em;
     padding-bottom: 1em;
     font-family: 'Lato', sans-serif;
