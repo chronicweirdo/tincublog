@@ -63,10 +63,13 @@ nav a.open {
 nav li ul li a {
     padding: 0;
     margin: 0;
-    color: var(--foreground-color, #ffffff);
     border: 0;
 }
 
+nav a {
+    color: var(--foreground-color, #ffffff);
+    fill: var(--foreground-color, #ffffff);
+}
 nav a:hover {
     color: var(--highlight-color, #f05843);
     fill: var(--highlight-color, #f05843);
@@ -135,6 +138,11 @@ nav a:hover {
         font-size: 4em;
         margin-left: auto;
         background-color: var(--background-color, #ffffff);
+        cursor: pointer;
+    }
+
+    #menu-button:hover {
+        color: var(--highlight-color, #f05843);
     }
 
     nav li, nav li ul li {
