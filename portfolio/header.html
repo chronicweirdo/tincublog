@@ -8,6 +8,41 @@
         <link rel="stylesheet" href="root.css" type="text/css" />
         <link rel="stylesheet" href="nav.css" type="text/css" />
         <style>
+            p {
+                padding: 0 2% 2vw 2%;
+                max-width: 1200px;
+                margin: auto;
+            }
+            ul.photos {
+                padding: 2vw 2%;
+                max-width: 1200px;
+                margin: auto;
+                display: grid;
+                row-gap: 2vw;
+                column-gap: 2%;
+                grid-template-columns: repeat(5, 18.4%);
+            }
+            .photos li {
+                display: inline-block;
+                width: 100%;
+            }
+            .photos img {
+                max-width: 100%;
+            }
+            @media (max-width: 800px) {
+                ul.photos {
+                    grid-template-columns: repeat(3, 32%);
+                }
+            }
+            @media (max-width: 400px) {
+                p {
+                    padding: 0 5% 5vw 5%;
+                }
+                ul.photos {
+                    padding: 5vw 5%;
+                    grid-template-columns: 100%;
+                }
+            }
         </style>
         <script src="nav.js"></script>
         <script>
@@ -50,13 +85,37 @@
             </ul>
         </nav>
         </header>
+        <ul class="photos">
+            <li><img src="beauty-brunch-portfolio/1.png" /></li>
+            <li><img src="beauty-brunch-portfolio/2.png" /></li>
+            <li><img src="beauty-brunch-portfolio/3.png" /></li>
+            <li><img src="beauty-brunch-portfolio/4.png" /></li>
+            <li><img src="beauty-brunch-portfolio/5.png" /></li>
+            <li><img src="beauty-brunch-portfolio/6.png" /></li>
+            <li><img src="beauty-brunch-portfolio/7.png" /></li>
+            <li><img src="beauty-brunch-portfolio/8.png" /></li>
+            <li><img src="beauty-brunch-portfolio/9.png" /></li>
+            <li><img src="beauty-brunch-portfolio/10.png" /></li>
+            <li><img src="beauty-brunch-portfolio/11.png" /></li>
+            <li><img src="beauty-brunch-portfolio/12.png" /></li>
+            <li><img src="beauty-brunch-portfolio/13.png" /></li>
+            <li><img src="beauty-brunch-portfolio/14.png" /></li>
+            <li><img src="beauty-brunch-portfolio/15.png" /></li>
+            <li><img src="beauty-brunch-portfolio/16.png" /></li>
+            <li><img src="beauty-brunch-portfolio/17.png" /></li>
+            <li><img src="beauty-brunch-portfolio/18.png" /></li>
+            <li><img src="beauty-brunch-portfolio/19.png" /></li>
+            <li><img src="beauty-brunch-portfolio/20.png" /></li>
+            <li><img src="beauty-brunch-portfolio/21.png" /></li>
+            <li><img src="beauty-brunch-portfolio/22.png" /></li>
+            <li><img src="beauty-brunch-portfolio/23.png" /></li>
+        </ul>
         <p>This one is the first paragraph!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-
 </p>
     </body>
 </html>

@@ -73,6 +73,8 @@ nav a:hover {
 
 #logo-line {
     text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #logo {
@@ -81,6 +83,7 @@ nav a:hover {
 
 #menu-button {
     display: none;
+    margin-right: .5em;
 }
 
 @media (max-width: 1050px) {
