@@ -4,46 +4,11 @@
         <base target="_parent" href="./">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="fonts.css" type="text/css"/>
         <link rel="stylesheet" href="root.css" type="text/css" />
+        <link rel="stylesheet" href="fonts.css" type="text/css"/>
         <link rel="stylesheet" href="nav.css" type="text/css" />
+        <link rel="stylesheet" href="page.css" type="text/css" />
         <style>
-            p {
-                padding: 0 2% 2vw 2%;
-                max-width: 1200px;
-                margin: auto;
-            }
-            ul.photos {
-                padding: 2vw 2%;
-                max-width: 1200px;
-                margin: auto;
-                display: grid;
-                row-gap: 2vw;
-                column-gap: 2%;
-                grid-template-columns: repeat(5, 18.4%);
-            }
-            .photos li {
-                display: inline-block;
-                width: 100%;
-            }
-            .photos img {
-                max-width: 100%;
-                pointer-events: none;
-            }
-            @media (max-width: 900px) {
-                ul.photos {
-                    grid-template-columns: repeat(3, 32%);
-                }
-            }
-            @media (max-width: 600px) {
-                p {
-                    padding: 0 5% 5vw 5%;
-                }
-                ul.photos {
-                    padding: 5vw 5%;
-                    grid-template-columns: 100%;
-                }
-            }
         </style>
         <script src="nav.js"></script>
         <script>
