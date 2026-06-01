@@ -84,6 +84,9 @@ nav a:hover {
 #logo {
     max-width: 100%;
 }
+#logo-small {
+    display: none;
+}
 
 #menu-button {
     display: none;
@@ -102,7 +105,11 @@ nav a:hover {
     }
 
     #logo {
+        display: none;
+    }
+    #logo-small {
         height: 80px;
+        display: block;
     }
 
     #logo-line {
