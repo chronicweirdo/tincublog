@@ -3,6 +3,9 @@ p {
     max-width: 1200px;
     margin: auto;
 }
+p:first-of-type {
+    margin-top: 2em;
+}
 ul.photos {
     padding: 2vw 2%;
     max-width: 1200px;
