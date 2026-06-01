@@ -23,7 +23,7 @@ ul.photos, ul.videos {
     max-width: 100%;
     pointer-events: none;
 }
-.videos img {
+.videos img, .videos video {
     max-width: 100%;
 }
 @media (max-width: 900px) {
