@@ -11,7 +11,7 @@ ul.photos, ul.videos {
     max-width: 1200px;
     margin: auto;
     display: grid;
-    row-gap: 2vw;
+    row-gap: 1vw;
     column-gap: 2%;
     grid-template-columns: repeat(5, 18.4%);
 }
@@ -37,6 +37,7 @@ ul.photos, ul.videos {
     }
     ul.photos, ul.videos {
         padding: 5vw 5%;
+        row-gap: 4vw;
         grid-template-columns: 100%;
     }
 }
