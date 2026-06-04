@@ -132,7 +132,7 @@ nav a:hover {
         background-color: var(--background-color, #ffffff);
         overflow: scroll;
         text-align: left;
-        font-size: 5vw;
+        font-size: 3.5vh;
     }
     nav > ul {
         padding-left: 2em;
