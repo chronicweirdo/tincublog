@@ -2,6 +2,7 @@
     --foreground-color: #000000;
     --background-color: #ffffff;
     --highlight-color: #f05843;
+    --light-foreground: #bebebe;
     --light-line: #ebebeb;
 }
 @media (prefers-color-scheme: light) {
@@ -9,6 +10,7 @@
         --foreground-color: #000000;
         --background-color: #ffffff;
         --highlight-color: #f05843;
+        --light-foreground: #bebebe;
         --light-line: #ebebeb;
     }
 }
@@ -17,6 +19,7 @@
         --foreground-color: #ffffff;
         --background-color: #000000;
         --highlight-color: #f05843;
+        --light-foreground: #2f2f2f;
         --light-line: #1a1a1a;
     }
 }
